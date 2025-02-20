@@ -1,0 +1,348 @@
+
+/* Google Fonts - Open Sans */
+/* font-family: "Open Sans", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Google Fonts - Montserrat*/
+/* font-family: "Montserrat", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Google Fonts - DM Sans */
+/* font-family: "DM Sans", serif; */ 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Google Fonts - Nunito Sans */
+/* font-family: "Nunito Sans", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Google Fonts - Alumni Sans Pinstripe Static */
+/* font-family: "Alumni Sans Pinstripe", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap');
+
+/* Google Fonts - Roboto Mono*/
+/* font-family: "Roboto Mono", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-li {
+    list-style: none;
+}
+
+.nav-link{
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color:#dce6ef
+    
+}
+
+body {
+    background-color: #131313;
+}
+
+h1 {
+    font-family: "Nunito Sans", serif;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.brand-logo {
+    width: 180px;
+    height: 75px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+/* INICIO */
+
+.h1-inicio {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.img-inicio {
+text-align: center;
+    width: 1600px;
+    height: 1000px;
+    margin-top: 25px;
+
+}
+
+.img-container-inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parrafo-inicio {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 100%;
+    text-align: left;
+}
+
+.parrafo-imagen {
+    font-family: "DM Sans", serif;
+    font-size: 40px;
+}
+
+.boton-inicio {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "DM Sans", serif;
+    font-size: 20px;
+}
+
+.container-sobreimagen-inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.parrafo-footer {
+    color:#ffffff83;
+    font-family: "DM Sans", serif;
+    font-size: 16px;
+}
+
+
+/* FRAGANCIAS */
+.h1-fragancias {
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.h2-fragancias {
+    font-family: "Nunito Sans", serif;
+    font-size: 40px;
+    margin-top: 25px;
+
+}
+
+.h3-fragancias {
+    font-family: "Nunito Sans", serif;
+    font-size: 32px;
+    margin-top: 30px;
+
+}
+
+.h3-nombres-perfumes {
+    font-family: "Roboto", serif;
+    font-style: italic;
+    font-size: 32px;
+    margin-top: 15px;
+
+}
+
+.p-fragancias {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.container-texto-fragancias {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.flyer-fragancias{
+    height: 800px;
+    width: 500px;
+}
+.img-perfume {
+    height: 500px;
+    width: 400px;
+
+}
+
+.container-img-fragancias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    gap: 10px;
+}
+
+/* SOBRE NOSOTROS */
+.img-sobre-nosotros {
+    height: 400px;
+    width: 500px;
+}
+
+.h-sobre-nosotros {
+    font-family: "Alumni Sans Pinstripe", serif;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.p-sobre-nosotros {
+    font-family: "Roboto Mono", serif;
+    font-size: 24px;
+}
+
+.container-sobre-nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 1px solid blue; */
+    margin-top: 200px;
+
+}
+
+.container2-sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    justify-content: center;
+    /* border: 1px solid red; */
+    }
+
+/* TU PERFUME IDEAL */
+.img-perfume-ideal {
+    height: 450px;
+    width: 700px;
+}
+
+.h-perfume-ideal {
+    font-family: "DM Sans", serif;
+}
+
+.form-perfume-ideal {
+    font-family: "Open Sans", serif;
+    font-size: 20px;
+}
+
+.boton-perfume-ideal {
+    font-family: "DM Sans", serif;
+    font-size: 28px;
+}
+
+/* CONTACTO */
+
+.h1-contacto {
+    font-size: 32px;
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: "Open Sans", serif;
+    font-size: 28px;
+}
+
+.input-form-contacto {
+    display: inline-block;
+    margin-top: 1px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.boton-form-contacto {
+    font-family: "DM Sans", serif;
+    font-size: 24px;
+    width: 400px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 1000px;
+}
+
+/* -- */
+
+.redes-footer {
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.brand-logo-footer {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 115px;
+    height: 50px;
+}
+
+
+.container-logos-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #0c0c0c;
+    /* border: 2px solid blue; */
+
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Open Sans", serif;
+    font-size: 30px;
+    /* border: 2px solid white; */
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+    /* border: 2px solid red; */
+}
+
+main {
+    color: #dce6ef;
+}
+
+/* .img-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} */
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Contacto - Essenza di Picco</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">
+            <img class="brand-logo" src="../assets/logo.png" alt="Logo Essenza di Picco">
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li class="nav-li">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="./fragancias.html">Fragancias</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="./tu-perfume-ideal.html">Tu Perfume Ideal</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="./sobre-nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="form-contacto" action="/submit" method="post">
+            <section class="container">
+                <h1 class = "h1-contacto">CONTÁCTANOS</h1>
+                <label for="">Nombre y Apellido</label>
+                <input class="input-form-contacto" type="text" name="nombre" id="nombre" required placeholder="Nombre y Apellido">
+            </section>
+            
+            <section class="container">
+                <label for="email">E-mail</label>
+                <input class="input-form-contacto" type="email" name="email" id="email" required placeholder="E-mail">
+            </section>
+            
+            <section class="container">
+                <label for="asunto">Asunto (opcional)</label>
+                <input class="input-form-contacto" type="text" name="asunto" id="asunto" placeholder="Asunto (opcional)">
+            </section>
+            
+            <section class="container">
+                <label for="message">Escribe un mensaje</label>
+                <textarea class="input-form-contacto" name="message" rows="5" required placeholder="Escribe un mensaje"></textarea>
+            </section>
+            
+            <button class="boton-form-contacto" type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p class="parrafo-footer">
+            © 2025. Todos los derechos reservados. Essenza di Picco.
+        </p>
+        <img class="brand-logo-footer" src="../assets/logo.png" alt="Logo Essenza di Picco">
+        <section class="container-logos-redes">
+            <a href="https://instagram.com">
+                <img class="redes-footer" src="../assets/instagram.png" alt="Logo Instagram">
+            </a>
+            <a href="https://x.com">
+                <img class="redes-footer" src="../assets/x.png" alt="Logo X">
+            </a>
+            <a href="https://whatsapp.com">
+                <img class="redes-footer" src="../assets/whatsapp.png" alt="Logo WhatsApp">
+            </a>
+        </section>
+    </footer>
+</body>
+
+</html>
