@@ -35,41 +35,68 @@
     </header>
 
     <main>
-        <img class="img-perfume-ideal" src="../assets/perfume-ideal.jpeg" alt="Hombre sosteniendo Essenza di Picco Born In Roma">
+        <section class="img-container-perfumeideal">
+            <img class="img-perfume-ideal" src="../assets/perfume-ideal.jpeg" alt="Hombre sosteniendo Essenza di Picco Born In Roma">
+        </section>
         <h1 class="h-perfume-ideal">Descubre cuál es tu Essenza di Picco ideal</h1>
-        <form class="form-perfume-ideal">
-            <label for="tipo-aroma">¿Qué tipo de aromas prefieres?</label>
-            <input type="checkbox" name="tipo-aroma" id="tipo-aroma">
-            <label for="">Fresco
-            </label>
-            <input type="checkbox" name="tipo-aroma" id="tipo-aroma">
-            <label for="">Dulces</label>
+        <section class="grid-container">
+            <form class="form-perfume-ideal">
+                <section class="preguntas">
+                    <label for="tipo-aroma">¿Qué tipo de aromas prefieres?</label>
+                    <section class="opciones">
+                        <input type="checkbox" name="tipo-aroma" id="tipo-aroma">
+                        <label for="">Frescos</label>
+                    </section>
+                
+                    <section class="opciones">
+                        <input type="checkbox" name="tipo-aroma" id="tipo-aroma">
+                        <label for="">Dulces</label>
+                    </section>
 
-            <input type="checkbox" name="tipo-aroma" id="tipo-aroma">
-            <label for="">Amaderados</label>
+                    <section class="opciones">
+                        <input type="checkbox" name="tipo-aroma" id="tipo-aroma">
+                        <label for="">Amaderados</label>
+                    </section>
 
-            <label for="ocasion"">¿Cuál es tu ocasión principal para usar perfumes?</label>
-            <input type="checkbox" name="ocasion" id="ocasion">
-            <label for="">Trabajo</label>
+                    <label for="ocasion"">¿Cuál es tu ocasión principal para usar perfumes?</label>
+                    <section class="opciones">
+                        <input type="checkbox" name="ocasion" id="ocasion">
+                        <label for="">Trabajo</label>
+                    </section>
+                    
+                    <section class="opciones">
+                        <input type="checkbox" name="ocasion" id="ocasion">
+                        <label for="">Eventos</label>
+                    </section>
+
+                    <section class="opciones">
+                        <input type="checkbox" name="ocasion" id="ocasion">
+                        <label for="">Diario</label>
+                    </section>
+
+                    <label for="intensidad">¿Prefieres fragancias sutiles o intensas?</label>
+                    <section class="opciones">
+                        <input type="checkbox" name="intensidad" id="ocasion">
+                        <label for="">Sutiles</label>
+                    </section>
+                    
+                    <section class="opciones">
+                        <input type="checkbox" name="intensidad" id="ocasion">
+                        <label for="">Intensas</label>
+                    </section>
+                    
+                </section>
+            </form>
+                <section class="mensaje">
+                    <section class="pregunta-textarea">
+                        <label for="comentarios">¿Tienes algún comentario para añadir?</label>
+                    <textarea class="textarea" name="comentarios" rows="10" cols="70" placeholder="Escribe aquí tu comentario..."></textarea>
+                    </section>
+                    <button class="boton-perfume-ideal" type="submit">Descubrir</button>
+                </section>
             
-            <input type="checkbox" name="ocasion" id="ocasion">
-            <label for="">Eventos</label>
-
-            <input type="checkbox" name="ocasion" id="ocasion">
-            <label for="">Diario</label>
-
-            <label for="intensidad">¿Prefieres fragancias sutiles o intensas?</label>
-            <input type="checkbox" name="intensidad" id="ocasion">
-            <label for="">Sutiles</label>
-            
-            <input type="checkbox" name="intensidad" id="ocasion">
-            <label for="">Intensas</label>
-
-            <label for="comentarios">¿Tienes algún comentario para añadir?</label>
-            <textarea name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tu comentario..."></textarea>
-        </form>
-            
-        <button class="boton-perfume-ideal" type="submit">Descubrir</button>
+                
+        </section>
     </main>
 
     <footer>
