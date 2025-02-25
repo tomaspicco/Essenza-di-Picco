@@ -37,8 +37,11 @@
     display: inline-block;
     margin-right: 20px;
     text-decoration: none;
-    color:#dce6ef
-    
+    color:#dce6ef;
+}
+
+.nav-link:hover{
+    color: #ffffff83;
 }
 
 body {
@@ -67,42 +70,87 @@ h1 {
 }
 
 .img-inicio {
-text-align: center;
+    text-align: center;
     width: 1600px;
     height: 1000px;
     margin-top: 25px;
-
 }
 
 .img-container-inicio {
     display: flex;
+    flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .parrafo-inicio {
     font-size: 25px;
-    margin-top: 15px;
-    margin-left: 25px;
+    margin-top: 30px;
+    /* margin-left: 25px; */
     width: 100%;
     text-align: left;
 }
 
-.parrafo-imagen {
+.parrafo1-imagen {
+    font-family: "DM Sans", serif;
+    font-size: 50px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+    text-align: center;
+}
+
+.parrafo2-imagen {
     font-family: "DM Sans", serif;
     font-size: 40px;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+    text-align: center;
 }
 
 .boton-inicio {
     display: flex;
     justify-content: center;
-    width: 100px;
-    padding: 5px 10px;
-    margin-top: 5px;
+    width: 150px;
+    height: 50px;
+    padding: 5px 15px;
     border-radius: 5px;
     cursor: pointer;
     font-family: "DM Sans", serif;
+    font-size: 25px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-propio-inicio{
+    font-family: "DM Sans", serif;
     font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 7px 15px;
+    border-radius: 20px;
+    background-color: rgb(50, 161, 93);
+}
+
+.btn-propio-inicio.secundario {
+    background-color: #8b8b8b;
+}
+
+.boton-inicio:hover {
+    background-color: rgb(201, 201, 201);
 }
 
 .container-sobreimagen-inicio {
@@ -149,6 +197,7 @@ text-align: center;
 }
 
 .p-fragancias {
+    font-family: "Montserrat", serif;
     font-size: 24px;
     margin-top: 5px;
 }
@@ -167,6 +216,25 @@ text-align: center;
     height: 500px;
     width: 400px;
 
+}
+
+.accordion-header button {
+    background-color: #1a1a1aef !important;
+    color:#ffffff !important;
+    border: none;
+}
+
+.accordion-header button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: 3px black solid;
+}
+
+.accordion-body {
+    background-color: #000; 
+    color:#dce6ef;
 }
 
 .container-img-fragancias{
@@ -188,18 +256,19 @@ text-align: center;
     font-family: "Alumni Sans Pinstripe", serif;
     font-size: 48px;
     font-weight: 600;
+    padding-left: 10px;
 }
 
 .p-sobre-nosotros {
     font-family: "Roboto Mono", serif;
     font-size: 24px;
+    padding-left: 10px;
 }
 
 .container-sobre-nosotros {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* border: 1px solid blue; */
     margin-top: 200px;
 
 }
@@ -209,8 +278,12 @@ text-align: center;
     flex-direction: column;
     width: 800px;
     justify-content: center;
-    /* border: 1px solid red; */
-    }
+}
+
+.card-propia-sobrenosotros {
+    border: none;
+}
+
 
 /* TU PERFUME IDEAL */
 .img-perfume-ideal {
@@ -238,6 +311,7 @@ text-align: center;
     flex-direction: column;
     grid-area: preguntas;
     font-size: 32px;
+    padding-left: 10px;
 }
 
 .opciones {
@@ -264,6 +338,8 @@ text-align: center;
     width: 100%;
     height: 100%;
     font-size: 20px;
+    background-color: #1a1a1a;
+    color: #dce6ef;
 }
 
 .pregunta-textarea {
@@ -271,6 +347,10 @@ text-align: center;
     flex-direction: column;
     justify-content: left;
     gap: 10px;    
+}
+
+.checkbox:hover {
+    cursor: pointer;
 }
 
 .h-perfume-ideal {
@@ -290,6 +370,29 @@ text-align: center;
     width: 20%;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.boton-perfume-ideal:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.bg-card-propio {
+    background-color: #1f1f1ffd;
+    color: #dce6ef;
+}
+
+.card-propia {
+    border: 2px solid gray;
+    border-radius: 1px;
+}
+
+.input-form-perfume-ideal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
 }
 
 /* CONTACTO */
@@ -328,12 +431,38 @@ text-align: center;
     cursor: pointer;
 }
 
+.boton-form-contacto:hover {
+    background-color: rgb(201, 201, 201);
+}
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
     width: 1000px;
+}
+
+.modal-title-propio{
+    font-family: "Open Sans", serif;
+    color: black;
+}
+
+.modal-body-propio {
+    font-family: "Open Sans", serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+    padding-left: 5px;
+}
+.btn-propio{
+    font-family: "Open Sans", serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
 }
 
 /* -- */
@@ -370,8 +499,6 @@ header {
     justify-content: center;
     width: 100%;
     background-color: #0c0c0c;
-    /* border: 2px solid blue; */
-
 }
 
 .navbar {
@@ -381,7 +508,6 @@ header {
     justify-content: center;
     font-family: "Open Sans", serif;
     font-size: 30px;
-    /* border: 2px solid white; */
 }
 
 .navbar ul {
@@ -392,17 +518,9 @@ header {
     padding: 0;
     margin: 0;
     gap: 25px;
-    /* border: 2px solid red; */
 }
 
 main {
     color: #dce6ef;
 }
-
-/* .img-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-} */
-
 
