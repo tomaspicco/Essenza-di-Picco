@@ -27,6 +27,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .nav-li {
@@ -60,6 +65,11 @@ h1 {
     margin-top: 15px;
     margin-left: 25px;
     margin-bottom: 10px;
+}
+
+.hamburguesa-logo {
+    width: 60px;
+    height: 60px;
 }
 
 /* INICIO */
@@ -290,7 +300,7 @@ h1 {
     height: 450px;
     width: 700px;
     margin-top: 70px;
-;}
+}
 
 .img-container-perfumeideal {
     text-align: center;
@@ -523,4 +533,112 @@ header {
 main {
     color: #dce6ef;
 }
+
+/* Media Queries */
+@media (max-width: 767px) {
+
+/* SOBRE NOSOTROS */
+    .container-sobre-nosotros {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 50px !important;
+        padding: 0;
+        width: 100%;
+    }
+
+    .container2-sobre-nosotros {
+        order: 1 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100% !important;
+        margin: 0;
+    }
+
+    .img-sobre-nosotros {
+        order: 2 !important;
+        max-width: 90%;
+        height: auto;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .h-sobre-nosotros, .p-sobre-nosotros{
+        margin: 0;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .card-propia-sobrenosotros {
+        width: 100%;
+        margin: 0;
+    }
+
+/* CONTACTO */
+
+    .form-contacto {
+        padding: 0 20px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .input-form-contacto {
+        width: 100%;
+    }
+
+    .boton-form-contacto {
+        width: 100%;
+    }
+
+    .h1-contacto {
+        text-align: center;
+    }
+
+    .modal-dialog {
+        margin: 1rem;
+    }
+    
+    .container label {
+        text-align: left;
+        width: 100%;
+    }
+
+/* NAVBAR */
+.navbar-nav {
+    flex-direction: column !important;
+    align-items: right !important;
+}
+
+  /* Espacio entre elementos */
+.navbar-nav .nav-li {
+    margin-bottom: 0.5rem;
+}
+
+.navbar-nav .nav-link {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 20px 20px;
+    gap: 10px;
+}
+}
+
+
+
+
 
