@@ -1,0 +1,14 @@
+footer {
+    @include flex(column, center, center);
+    margin-top: 30px;
+}
+.brand-logo-footer {
+    @include medidas(115px, 50px);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.parrafo-footer {
+    color:map-get($colors , gray-footer);
+    font-family: "DM Sans", serif;
+    font-size: map-get($font-sizes , s);
+}

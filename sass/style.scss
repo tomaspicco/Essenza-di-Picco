@@ -1,0 +1,30 @@
+// BASE
+@import 'partials/base/reset';
+@import 'partials/base/tipografia';
+
+// UTILITIES
+@import 'partials/utilities/variables';
+@import 'partials/utilities/maps';
+@import 'partials/utilities/mixins';
+
+// COMPONENTS
+@import 'partials/components/index';
+@import 'partials/components/fragancias';
+@import 'partials/components/tu-perfume-ideal';
+@import 'partials/components/sobre-nosotros';
+@import 'partials/components/images';
+@import 'partials/components/navbar';
+@import 'partials/components/botones';
+@import 'partials/components/cards';
+@import 'partials/components/forms';
+@import 'partials/components/modals';
+@import 'partials/components/body';
+@import 'partials/components/header';
+@import 'partials/components/main';
+@import 'partials/components/footer';
+@import 'partials/components/titulosysubtitulos';
+@import 'partials/components/containers';
+@import 'partials/components/accordion';
+// HACER IMPORTS DE ESTILOS PROPIOS DE CADA PÁGINA EN CASO DE QUE EXISTAN //
+
+

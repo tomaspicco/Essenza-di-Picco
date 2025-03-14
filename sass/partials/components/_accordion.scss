@@ -1,0 +1,19 @@
+.accordion {
+    max-width: 90%;
+}
+.accordion-header button {
+    background-color: map-get($colors , black2);
+    color: map-get($colors , pure-white );
+    border: none;
+    &:hover{
+        box-shadow:none;
+    }
+}
+.accordion-item {
+    border: 3px black solid;
+}
+
+.accordion-body {
+    background-color: map-get($colors , pure-black); 
+    color: map-get($colors , blanco);
+}

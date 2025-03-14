@@ -1,0 +1,22 @@
+.form-perfume-ideal {
+    font-family: "Open Sans", serif;
+    font-size: map-get($font-sizes , s);
+}
+.input-form-perfume-ideal {
+    @include flex(column, center, center);
+    margin-top: 10px;
+    width: 100%;
+    font-size: map-get($font-sizes , s);
+}
+.form-contacto {
+    @include flex(column, center, center);
+    gap: 15px;
+    font-family: "Open Sans", serif;
+    font-size: map-get($font-sizes , m);
+}
+.input-form-contacto {
+    display: inline-block;
+    margin-top: 1px;
+    width: 100%;
+    font-size: 20px;
+}

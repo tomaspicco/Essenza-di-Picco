@@ -1,0 +1,30 @@
+.brand-logo {
+    @include medidas(180px, 75px);
+    margin: 15px 0 10px 25px;
+}
+.hamburguesa-logo {
+    @include medidas(60px, 60px);
+}
+.img-inicio {
+    @include medidas(1600px, 1000px);
+    margin-top: 25px;
+    text-align: center;
+}
+.img-perfume {
+    @include medidas(400px, 500px);
+}
+.img-texto {
+    @include medidas(700px, 700px);
+    border-radius: 8px;
+    max-width: 50%;  
+}
+.img-perfume-ideal {
+    @include medidas(700px, 450px);
+    margin-top: 70px;
+}
+.img-sobre-nosotros {
+    @include medidas(500px, 400px);
+}
+.redes-footer {
+    @include medidas(40px, 40px);
+}

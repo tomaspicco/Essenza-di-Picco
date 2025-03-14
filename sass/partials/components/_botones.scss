@@ -1,0 +1,65 @@
+.boton-inicio {
+    @include button(5px 15px, map-get($colors, blanco), 5px);
+    @include flex(row, center, center);
+    @include medidas(150px, 50px);
+    font-family: "DM Sans", serif;
+    font-size: map-get($font-sizes, s);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &:hover{
+        background-color:rgb(201, 201, 201);
+    }
+}
+.btn-propio-inicio {
+    @include button(7px 15px, map-get($colors, verde), 20px);
+    @include flex(row, center, center);
+    @include medidas(150px, 50px);
+    font-family: "DM Sans", serif;
+    color: white;
+    margin-top: 30px;
+    font-weight: 600;
+    &:hover{
+        background-color: rgb(14, 143, 25);
+    }
+}
+.btn-secundario-inicio {
+    @extend .btn-propio-inicio;
+    background-color: map-get($colors, gris);
+    &:hover{
+        background-color: rgb(119, 119, 119);
+    }
+}
+.boton-perfume-ideal {
+    margin: 30px;
+    font-family: "DM Sans", serif;
+    font-size: map-get($font-sizes, m);
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        background-color: map-get($colors , gris);
+    }
+}
+.boton-form-contacto {
+    font-family: "DM Sans", serif;
+    font-size: 24px;
+    width: 400px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        background-color: map-get($colors , gris);
+    }
+}
+.btn-propio{
+    font-family: "Open Sans", serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: map-get($colors , pure-white);
+    padding: 7px;
+    border-radius: 5px;
+    background-color: map-get($colors , pure-black);
+}

@@ -1,0 +1,41 @@
+.preguntas {
+    display: flex;
+    flex-direction: column;
+    grid-area: preguntas;
+    font-size: map-get($font-sizes , m);
+    padding-left: 10px;
+    background-color: map-get($colors , negro);
+    color: map-get($colors, blanco);
+}
+.opciones {
+    @include flex(row, left, center);
+    gap: 10px;
+    font-size: map-get($font-sizes , m);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.mensaje {
+    @include flex(column, center, center);
+    grid-area: mensaje;
+    font-family: "Open Sans", serif;
+    font-size: map-get($font-sizes , m);
+}
+.textarea {
+    @include medidas(100%, 100%);
+    font-size: map-get($font-sizes , s);
+    background-color: map-get($colors , black2);
+    color: map-get($colors , blanco);
+}
+.pregunta-textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;    
+}
+.checkbox{
+    @include medidas(20px, 20px);
+    &:hover{
+        cursor: pointer;
+    }
+}
