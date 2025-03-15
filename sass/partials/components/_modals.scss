@@ -9,3 +9,8 @@
     color: map-get($colors , pure-black);
     padding-left: 5px;
 }
+@media (max-width: 767px){
+    .modal-dialog {
+        margin: 1rem;
+    }
+}

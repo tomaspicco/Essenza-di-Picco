@@ -22,6 +22,91 @@
 /* font-family: "Alumni Sans Pinstripe", serif; */
 /* Google Fonts - Roboto Mono*/
 /* font-family: "Roboto Mono", serif; */
+/* Media Queries */
+@media (max-width: 767px) {
+  /* SOBRE NOSOTROS */
+  .container-sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+  }
+  .container2-sobre-nosotros {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    margin: 0;
+  }
+  .img-sobre-nosotros {
+    order: 2;
+    max-width: 90%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .h-sobre-nosotros, .p-sobre-nosotros {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .card-propia-sobrenosotros {
+    width: 100%;
+    margin: 0;
+  }
+  /* CONTACTO */
+  .form-contacto {
+    padding: 0 20px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .input-form-contacto {
+    width: 100%;
+  }
+  .boton-form-contacto {
+    width: 100%;
+  }
+  .h1-contacto {
+    text-align: center;
+  }
+  .modal-dialog {
+    margin: 1rem;
+  }
+  .container label {
+    text-align: left;
+    width: 100%;
+  }
+  /* NAVBAR */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: right;
+  }
+  .navbar-nav .nav-li {
+    margin-bottom: 0.5rem;
+  }
+  .navbar-nav .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 20px 20px;
+    gap: 10px;
+  }
+}
 .parrafo-inicio {
   font-family: "Nunito Sans", serif;
   font-size: 24px;
@@ -30,6 +115,12 @@
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .parrafo-inicio {
+    font-size: 24px;
+    max-width: 90%;
+  }
+}
 .parrafo1-imagen {
   font-family: "DM Sans", serif;
   font-size: 50px;
@@ -39,8 +130,15 @@
   transform: translate(-50%, -50%);
   color: #FFFFFF;
   text-align: center;
+  width: 100%;
 }
 
+@media (max-width: 767px) {
+  .parrafo1-imagen {
+    font-size: 32px;
+    top: 29%;
+  }
+}
 .parrafo2-imagen {
   font-family: "DM Sans", serif;
   font-size: 40px;
@@ -50,8 +148,15 @@
   transform: translate(-50%, -50%);
   color: #FFFFFF;
   text-align: center;
+  width: 100%;
 }
 
+@media (max-width: 767px) {
+  .parrafo2-imagen {
+    font-size: 24px;
+    top: 33%;
+  }
+}
 .p-fragancias {
   font-family: "Montserrat", serif;
   font-size: 24px;
@@ -123,6 +228,13 @@
   max-width: 100%;
 }
 
+@media (max-width: 767px) {
+  .p-sobre-nosotros {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
 .brand-logo {
   width: 180px;
   height: 75px;
@@ -141,6 +253,13 @@
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .img-inicio {
+    width: 600px;
+    height: 400px;
+    max-width: 90%;
+  }
+}
 .img-perfume {
   width: 400px;
   height: 500px;
@@ -164,6 +283,15 @@
   height: 400px;
 }
 
+@media (max-width: 767px) {
+  .img-sobre-nosotros {
+    order: 2;
+    max-width: 90%;
+    height: auto;
+    margin: 1rem, auto, 1.5rem, auto;
+    border-radius: 5px;
+  }
+}
 .redes-footer {
   width: 40px;
   height: 40px;
@@ -199,6 +327,30 @@
   color: rgba(255, 255, 255, 0.5137254902);
 }
 
+@media (max-width: 767px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+  }
+  .navbar ul li {
+    list-style: none;
+  }
+  .navbar ul li a {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+  }
+}
 .boton-inicio {
   padding: 5px 15px;
   background-color: #dce6ef;
@@ -222,6 +374,14 @@
   background-color: rgb(201, 201, 201);
 }
 
+@media (max-width: 767px) {
+  .boton-inicio {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    top: 36.5%;
+  }
+}
 .btn-propio-inicio, .btn-secundario-inicio {
   padding: 7px 15px;
   background-color: rgb(50, 161, 93);
@@ -275,6 +435,11 @@
   background-color: #8b8b8b;
 }
 
+@media (max-width: 767px) {
+  .boton-form-contacto {
+    max-width: 100%;
+  }
+}
 .btn-propio {
   font-family: "Open Sans", serif;
   font-size: 15px;
@@ -288,15 +453,23 @@
 .card-propia-sobrenosotros {
   border: none;
   max-width: 45%;
+  border: 1px solid #131313;
+  border-radius: 1px;
 }
 
+@media (max-width: 767px) {
+  .card-propia-sobrenosotros {
+    width: 100%;
+    margin: 0;
+  }
+}
 .bg-card-propio {
   background-color: rgba(31, 31, 31, 0.9921568627);
   color: #dce6ef;
 }
 
 .card-propia {
-  border: 2px solid white;
+  border: 1px solid #FFFFFF;
   border-radius: 1px;
 }
 
@@ -325,6 +498,11 @@
   font-size: 32px;
 }
 
+@media (max-width: 767px) {
+  .form-contacto {
+    padding: 0 20px;
+  }
+}
 .input-form-contacto {
   display: inline-block;
   margin-top: 1px;
@@ -332,6 +510,11 @@
   font-size: 20px;
 }
 
+@media (max-width: 767px) {
+  .input-form-contacto {
+    width: 100%;
+  }
+}
 .modal-title-propio {
   font-family: "Open Sans", serif;
   color: #000000;
@@ -345,6 +528,11 @@
   padding-left: 5px;
 }
 
+@media (max-width: 767px) {
+  .modal-dialog {
+    margin: 1rem;
+  }
+}
 body {
   overflow-x: hidden;
   background-color: #131313;
@@ -367,6 +555,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-top: 30px;
 }
 
@@ -402,6 +591,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+@media (max-width: 767px) {
+  .h1-contacto {
+    text-align: center;
+  }
+}
 .h-perfume-ideal {
   font-family: "DM Sans", serif;
   margin: 15px 10px 10px 10px;
@@ -414,6 +608,13 @@ h1 {
   padding-left: 10px;
 }
 
+@media (max-width: 767px) {
+  .h-sobre-nosotros {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
 .h1-fragancias {
   text-align: center;
   margin-top: 25px;
@@ -489,6 +690,17 @@ h1 {
   margin-top: 200px;
 }
 
+@media (max-width: 767px) {
+  .container-sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+  }
+}
 .img-container-perfumeideal {
   text-align: center;
 }
@@ -515,17 +727,39 @@ h1 {
   align-items: left;
   width: 1000px;
 }
+.container .info {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito Sans", serif;
+  font-size: 24px;
+  color: #dce6ef;
+  gap: 30px;
+  max-width: 100%;
+}
 
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .container label {
+    text-align: left;
+    width: 100%;
+  }
+}
 .accordion {
   max-width: 90%;
 }
 
-.accordion-header button {
+.accordion .accordion-header button {
   background-color: rgba(26, 26, 26, 0.937254902);
   color: #FFFFFF;
   border: none;
 }
-.accordion-header button:hover {
+.accordion .accordion-header button:hover {
   box-shadow: none;
 }
 
@@ -536,6 +770,11 @@ h1 {
 .accordion-body {
   background-color: #000000;
   color: #dce6ef;
+}
+
+iframe {
+  border: none;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

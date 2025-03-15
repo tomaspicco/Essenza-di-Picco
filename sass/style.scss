@@ -8,6 +8,7 @@
 @import 'partials/utilities/mixins';
 
 // COMPONENTS
+@import 'partials/components/mediaqueries';
 @import 'partials/components/index';
 @import 'partials/components/fragancias';
 @import 'partials/components/tu-perfume-ideal';
@@ -25,6 +26,7 @@
 @import 'partials/components/titulosysubtitulos';
 @import 'partials/components/containers';
 @import 'partials/components/accordion';
+@import 'partials/components/iframe';
 // HACER IMPORTS DE ESTILOS PROPIOS DE CADA PÁGINA EN CASO DE QUE EXISTAN //
 
 

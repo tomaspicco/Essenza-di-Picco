@@ -1,12 +1,22 @@
 .card-propia-sobrenosotros {
     border: none;
     max-width: 45%;
+    border: 1px solid map-get($colors , negro);
+    border-radius: 1px;
+}
+@media (max-width: 767px){
+.card-propia-sobrenosotros {
+    width: 100%;
+    margin: 0;
+    }
 }
 .bg-card-propio {
     background-color: map-get($colors , dark-gray);
     color: map-get($colors , blanco);
 }
 .card-propia {
-    border: 2px solid white;
-    border-radius: 1px;
+        border: 1px solid map-get($colors , pure-white);
+        border-radius: 1px;
 }
+
+

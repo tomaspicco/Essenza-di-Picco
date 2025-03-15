@@ -21,3 +21,22 @@
             }
         }
 }
+@media (max-width: 767px){
+    .navbar {
+        @include flex (column, center, right);
+            ul {
+                @include flex (column, center, center);
+                padding: 0;
+                gap: 10px;
+                li {
+                    list-style: none;
+                    a {
+                        width: 100%;
+                        text-align: center;
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+}
+

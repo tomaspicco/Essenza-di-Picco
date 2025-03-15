@@ -10,6 +10,12 @@
     margin-top: 25px;
     text-align: center;
 }
+@media (max-width: 767px){
+    .img-inicio{
+        @include medidas(600px, 400px);
+        max-width: 90%;
+    }
+}
 .img-perfume {
     @include medidas(400px, 500px);
 }
@@ -24,6 +30,15 @@
 }
 .img-sobre-nosotros {
     @include medidas(500px, 400px);
+}
+@media (max-width: 767px){
+    .img-sobre-nosotros {
+        order: 2;
+        max-width: 90%;
+        height: auto;
+        margin: 1rem, auto, 1.5rem, auto;
+        border-radius: 5px;
+    }
 }
 .redes-footer {
     @include medidas(40px, 40px);

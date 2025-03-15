@@ -5,7 +5,12 @@
     width: 100%;
     text-align: left;
 }
-
+@media (max-width: 767px){
+    .parrafo-inicio{
+        font-size: map-get($font-sizes , s);
+        max-width: 90%;
+    }
+}
 .parrafo1-imagen {
     font-family: "DM Sans", serif;
     font-size: 50px;
@@ -15,6 +20,13 @@
     transform: translate(-50%, -50%);
     color: map-get($colors , pure-white);
     text-align: center;
+    width: 100%;
+}
+@media (max-width: 767px){
+    .parrafo1-imagen {
+        font-size: map-get($font-sizes , m);
+        top: 29%;
+    }
 }
 
 .parrafo2-imagen {
@@ -26,4 +38,11 @@
     transform: translate(-50%, -50%);
     color: map-get($colors , pure-white);
     text-align: center;
+    width: 100%;
+}
+@media (max-width: 767px){
+    .parrafo2-imagen {
+        font-size: map-get($font-sizes , s);
+        top: 33%;
+    }
 }

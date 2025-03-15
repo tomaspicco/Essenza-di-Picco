@@ -12,6 +12,13 @@
         background-color:rgb(201, 201, 201);
     }
 }
+@media (max-width: 767px){
+    .boton-inicio{
+        @include medidas(100px, 40px);
+        font-size: map-get($font-sizes, xs);
+        top: 36.5%;
+    }
+}
 .btn-propio-inicio {
     @include button(7px 15px, map-get($colors, verde), 20px);
     @include flex(row, center, center);
@@ -52,6 +59,11 @@
     cursor: pointer;
     &:hover{
         background-color: map-get($colors , gris);
+    }
+}
+@media (max-width: 767px){
+    .boton-form-contacto {
+        max-width: 100%;
     }
 }
 .btn-propio{

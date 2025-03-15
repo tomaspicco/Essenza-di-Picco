@@ -1,5 +1,6 @@
 footer {
     @include flex(column, center, center);
+    text-align: center;
     margin-top: 30px;
 }
 .brand-logo-footer {

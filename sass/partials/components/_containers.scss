@@ -32,6 +32,14 @@
     width: 100%;
     margin-top: 200px;
 }
+@media (max-width: 767px) {
+    .container-sobre-nosotros {
+        @include flex(column, center, center);
+        margin-top: 50px;
+        padding: 0;
+        width: 100%;
+    }
+}
 .img-container-perfumeideal {
     text-align: center;
 }
@@ -53,5 +61,35 @@
 .container {
     @include flex(column, center, left);
     width: 1000px;
+    .info{
+        margin-top: 100px;
+        @include flex(column, center, center);
+        font-family: "Nunito Sans", serif;
+        font-size: map-get($font-sizes , s);
+        color: map-get($colors , blanco);
+        gap: 30px;
+        max-width: 100%;
+    }
 }
-//
+
+
+@media (max-width: 767px){
+    .container {
+        width: 100%;
+        padding: 0 10px;
+        
+        label {
+        text-align: left;
+        width: 100%;
+        }
+    }
+}
+// .container-contacto{
+//     margin-top: 150px;
+//     @include flex(row, center, center);
+//     font-family: "Nunito Sans", serif;
+//     font-size: map-get($font-sizes , s);
+//     color: map-get($colors , blanco);
+//     gap: 100px;
+//     max-width: 90%;
+// }

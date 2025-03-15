@@ -14,9 +14,19 @@
     font-family: "Open Sans", serif;
     font-size: map-get($font-sizes , m);
 }
+@media (max-width: 767px){
+    .form-contacto {
+        padding: 0 20px;
+    }
+}
 .input-form-contacto {
     display: inline-block;
     margin-top: 1px;
     width: 100%;
     font-size: 20px;
+}
+@media (max-width: 767px){
+    .input-form-contacto {
+        width: 100%;
+    }
 }
