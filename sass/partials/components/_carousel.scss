@@ -1,0 +1,12 @@
+.carousel.slide{
+    display: none;
+}
+@media (max-width: 767px){
+    .carousel.slide{
+        display: block;
+    }
+    // .carousel-item{
+        // display: flex;
+        // justify-content: center;
+    // }
+}

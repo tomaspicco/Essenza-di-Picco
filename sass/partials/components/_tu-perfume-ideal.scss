@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     grid-area: preguntas;
-    font-size: map-get($font-sizes , m);
+    font-size: map-get($font-sizes , s);
     padding-left: 10px;
     background-color: map-get($colors , negro);
     color: map-get($colors, blanco);
@@ -10,7 +10,7 @@
 .opciones {
     @include flex(row, left, center);
     gap: 10px;
-    font-size: map-get($font-sizes , m);
+    font-size: map-get($font-sizes , s);
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -18,7 +18,7 @@
     @include flex(column, center, center);
     grid-area: mensaje;
     font-family: "Open Sans", serif;
-    font-size: map-get($font-sizes , m);
+    font-size: map-get($font-sizes , s);
 }
 .textarea {
     @include medidas(100%, 100%);

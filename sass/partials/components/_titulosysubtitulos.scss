@@ -23,6 +23,14 @@ h1 {
     font-family: "DM Sans", serif;
     margin: 15px 10px 10px 10px;
 }
+@media (max-width: 767px){
+    .h-perfume-ideal{
+        font-size: map-get($font-sizes , m);
+        text-align: center;
+        width: 100%;
+        margin: 15px 0;
+    }
+}
 .h-sobre-nosotros {
     font-family: "Alumni Sans Pinstripe", serif;
     font-size: map-get($font-sizes , xl);
@@ -40,12 +48,24 @@ h1 {
     text-align: center;
     margin-top: 25px;
 }
+@media (max-width: 767px){
+    .h1-fragancias {
+        font-size: map-get($font-sizes , m);
+        max-width: 100%;
+    }
+}
 .h2-fragancias, .h3-fragancias {
     font-family: "Nunito Sans", serif;
     font-size: 50px;
     margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
+}
+@media (max-width: 767px){
+    .h2-fragancias, .h3-fragancias {
+        font-size: map-get($font-sizes , m);
+        max-width: 100%;
+    }
 }
 .h3-nombres-perfumes {
     font-family: "Roboto", serif;

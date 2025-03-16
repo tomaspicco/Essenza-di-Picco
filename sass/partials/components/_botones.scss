@@ -41,8 +41,8 @@
 .boton-perfume-ideal {
     margin: 30px;
     font-family: "DM Sans", serif;
-    font-size: map-get($font-sizes, m);
-    width: 20%;
+    font-size: map-get($font-sizes, s);
+    width: 25%;
     border-radius: 5px;
     cursor: pointer;
     &:hover{
