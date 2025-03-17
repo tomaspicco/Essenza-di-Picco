@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ANIMATED.CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--CSS-->
     <link rel="stylesheet" href="../styles/style.css">
     <title>Contacto - Essenza di Picco</title>
@@ -45,27 +49,30 @@
     </header>
 
     <main>
+        
         <form class="form-contacto" action="/submit" method="post">
-            <section class="container">
-                <h1 class = "h1-contacto">CONTÁCTANOS</h1>
-                <label for="">Nombre y Apellido</label>
-                <input class="input-form-contacto" type="text" name="nombre" id="nombre" required placeholder="Nombre y Apellido">
-            </section>
-            
-            <section class="container">
-                <label for="email">E-mail</label>
-                <input class="input-form-contacto" type="email" name="email" id="email" required placeholder="E-mail">
-            </section>
-            
-            <section class="container">
-                <label for="asunto">Asunto (opcional)</label>
-                <input class="input-form-contacto" type="text" name="asunto" id="asunto" placeholder="Asunto (opcional)">
-            </section>
-            
-            <section class="container">
-                <label for="message">Escribe un mensaje</label>
-                <textarea class="input-form-contacto" name="message" rows="5" required placeholder="Escribe un mensaje"></textarea>
-            </section>
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="3000">
+                <section class="container">
+                    <h1 class = "h1-contacto">CONTÁCTANOS</h1>
+                    <label for="">Nombre y Apellido</label>
+                    <input class="input-form-contacto" type="text" name="nombre" id="nombre" required placeholder="Nombre y Apellido">
+                </section>
+                
+                <section class="container">
+                    <label for="email">E-mail</label>
+                    <input class="input-form-contacto" type="email" name="email" id="email" required placeholder="E-mail">
+                </section>
+                
+                <section class="container">
+                    <label for="asunto">Asunto (opcional)</label>
+                    <input class="input-form-contacto" type="text" name="asunto" id="asunto" placeholder="Asunto (opcional)">
+                </section>
+                
+                <section class="container">
+                    <label for="message">Escribe un mensaje</label>
+                    <textarea class="input-form-contacto" name="message" rows="5" required placeholder="Escribe un mensaje"></textarea>
+                </section>
+            </div>
             
             <button type="button" class="boton-form-contacto" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Enviar
@@ -88,22 +95,19 @@
                 </div>
             </div>
         </form>
-        <!-- <h2 class="h1-contacto">ENCONTRANOS EN:</h2> -->
         <section class="container">
             <section class="info">
                 <h2 class="h1-contacto">ENCUÉNTRANOS EN:</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53124.076958045094!2d-65.5048932184522!3d-33.676465686329365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d16a8988796ca7%3A0x178c644094662e35!2sVilla%20Mercedes%2C%20San%20Luis!5e0!3m2!1ses!2sar!4v1742010945852!5m2!1ses!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
                 <div>
-                <p>📍 Dirección: Calle Falsa 123, Villa Mercedes.</p>
-                <p>📞 Teléfono: +54 9 123456</p>
-                <p>📧 Correo: contacto@essenzadipicco.com</p>
-                <p>🕒 Horario: Lunes a Viernes - 9:00 AM a 6:00 PM.</p>
-                </div>
+                    <p>📍 Dirección: Calle Falsa 123, Villa Mercedes.</p>
+                    <p>📞 Teléfono: +54 9 123456</p>
+                    <p>📧 Correo: contacto@essenzadipicco.com</p>
+                    <p>🕒 Horario: Lunes a Viernes - 9:00 AM a 6:00 PM.</p>
+                    </div>
             </section>
-                
-        </section>
-        
+        </section>        
     </main>
 
     <footer>
@@ -125,6 +129,11 @@
     </footer>
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
