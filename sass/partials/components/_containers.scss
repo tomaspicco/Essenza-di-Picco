@@ -1,21 +1,34 @@
 .img-container-inicio {
+    @include flex(column, flex-end, center);
+    @include medidas(1600px, 1000px);
+    text-align: center;
+    background-image: url('../../../assets/aventura.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+@media (max-width: 767px){
+    .img-container-inicio {
+        @include medidas(600px, 300px);
+        max-width: 90%;
+        padding-bottom: 10px;
+    }
+}
+.parrafos-boton-inicio {
     @include flex(column, center, center);
-    position: relative;
+}
+.texto-boton-inicio {
+    @include flex(column, center, center);
     text-align: center;
     width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-.container-sobreimagen-inicio {
-    @include flex(column, center, center);
-    text-align: center;
 }
 .container-texto-fragancias {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
     width: 100%;
-    // text-align: left;
 }
 .container-fragacias-texto-img{
     @include flex(row, space-around, center);
@@ -25,6 +38,7 @@
 @media (max-width: 767px){
     .container-fragacias-texto-img{
         @include flex(column, center, center);
+        max-width: 100%;
     }
 }
 .container-img-fragancias{
@@ -54,6 +68,11 @@
 .img-container-perfumeideal {
     text-align: center;
 }
+@media (max-width: 767px){
+    .img-container-perfumeideal{
+        width: 100%;
+    }
+}
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -65,16 +84,13 @@
 }
 @media (max-width: 767px){
     .grid-container {
-        // grid-template-columns: 1fr;
-        // grid-template-rows: auto auto;
-        // grid-template-areas:
-        //     "preguntas
-        //     mensaje";
         @include flex(column, center, center);
         gap: 30px;
         margin-left: 10px;
         margin-right: 10px;
-        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
     }
 }
 .container-logos-redes {
@@ -96,8 +112,6 @@
         max-width: 100%;
     }
 }
-
-
 @media (max-width: 767px){
     .container {
         width: 100%;
@@ -109,12 +123,3 @@
         }
     }
 }
-// .container-contacto{
-//     margin-top: 150px;
-//     @include flex(row, center, center);
-//     font-family: "Nunito Sans", serif;
-//     font-size: map-get($font-sizes , s);
-//     color: map-get($colors , blanco);
-//     gap: 100px;
-//     max-width: 90%;
-// }

@@ -1,8 +1,9 @@
 .parrafo-inicio {
     font-family: "Nunito Sans", serif;
     font-size: map-get($font-sizes , s);
-    margin-top: 30px;
+    margin: 40px auto;
     width: 100%;
+    max-width: 1600px;
     text-align: left;
 }
 @media (max-width: 767px){
@@ -14,35 +15,21 @@
 .parrafo1-imagen {
     font-family: "DM Sans", serif;
     font-size: 50px;
-    position: absolute;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: map-get($colors , pure-white);
     text-align: center;
     width: 100%;
 }
 @media (max-width: 767px){
     .parrafo1-imagen {
-        font-size: map-get($font-sizes , m);
-        top: 29%;
+        font-size: map-get($font-sizes , s);
     }
 }
-
 .parrafo2-imagen {
-    font-family: "DM Sans", serif;
+    @extend .parrafo1-imagen; 
     font-size: map-get($font-sizes , l);
-    position: absolute;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: map-get($colors , pure-white);
-    text-align: center;
-    width: 100%;
 }
 @media (max-width: 767px){
     .parrafo2-imagen {
         font-size: map-get($font-sizes , s);
-        top: 33%;
     }
 }

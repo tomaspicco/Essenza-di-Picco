@@ -25,8 +25,9 @@
 .parrafo-inicio {
   font-family: "Nunito Sans", serif;
   font-size: 24px;
-  margin-top: 30px;
+  margin: 40px auto;
   width: 100%;
+  max-width: 1600px;
   text-align: left;
 }
 
@@ -36,40 +37,26 @@
     max-width: 90%;
   }
 }
-.parrafo1-imagen {
+.parrafo1-imagen, .parrafo2-imagen {
   font-family: "DM Sans", serif;
   font-size: 50px;
-  position: absolute;
-  top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #FFFFFF;
   text-align: center;
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  .parrafo1-imagen {
-    font-size: 32px;
-    top: 29%;
+  .parrafo1-imagen, .parrafo2-imagen {
+    font-size: 24px;
   }
 }
 .parrafo2-imagen {
-  font-family: "DM Sans", serif;
   font-size: 40px;
-  position: absolute;
-  top: 64%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #FFFFFF;
-  text-align: center;
-  width: 100%;
 }
 
 @media (max-width: 767px) {
   .parrafo2-imagen {
     font-size: 24px;
-    top: 33%;
   }
 }
 .p-fragancias {
@@ -96,6 +83,12 @@
   color: #dce6ef;
 }
 
+@media (max-width: 767px) {
+  .preguntas {
+    width: 100%;
+    max-width: 500px;
+  }
+}
 .opciones {
   display: flex;
   flex-direction: row;
@@ -117,6 +110,12 @@
   font-size: 24px;
 }
 
+@media (max-width: 767px) {
+  .mensaje {
+    width: 100%;
+    max-width: 500px;
+  }
+}
 .textarea {
   width: 100%;
   height: 100%;
@@ -170,20 +169,6 @@
   height: 60px;
 }
 
-.img-inicio {
-  width: 1600px;
-  height: 1000px;
-  margin-top: 25px;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  .img-inicio {
-    width: 600px;
-    height: 300px;
-    max-width: 90%;
-  }
-}
 .img-perfume {
   width: 400px;
   height: 500px;
@@ -201,20 +186,22 @@
     width: 550px;
     height: 600px;
     max-width: 100%;
+    min-width: 550px;
   }
 }
 .img-perfume-ideal {
   width: 700px;
   height: 450px;
   margin-top: 70px;
-  max-width: 100%;
+  width: auto;
 }
 
 @media (max-width: 767px) {
   .img-perfume-ideal {
     width: 400px;
-    height: 250px;
+    height: auto;
     margin-top: 30px;
+    max-width: 90%;
   }
 }
 .img-sobre-nosotros {
@@ -304,10 +291,6 @@
   height: 50px;
   font-family: "DM Sans", serif;
   font-size: 24px;
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .boton-inicio:hover {
   background-color: rgb(201, 201, 201);
@@ -318,7 +301,6 @@
     width: 100px;
     height: 40px;
     font-size: 16px;
-    top: 36.5%;
   }
 }
 .btn-propio-inicio, .btn-secundario-inicio {
@@ -353,7 +335,8 @@
   margin: 30px;
   font-family: "DM Sans", serif;
   font-size: 24px;
-  width: 25%;
+  width: 100%;
+  max-width: 200px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -361,6 +344,12 @@
   background-color: #8b8b8b;
 }
 
+@media (max-width: 767px) {
+  .boton-perfume-ideal {
+    width: 30%;
+    max-width: 300px;
+  }
+}
 .boton-form-contacto {
   font-family: "DM Sans", serif;
   font-size: 24px;
@@ -381,7 +370,7 @@
 }
 .btn-propio {
   font-family: "Open Sans", serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   color: #FFFFFF;
   padding: 7px;
@@ -598,21 +587,41 @@ h1 {
 .img-container-inicio {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  position: relative;
+  width: 1600px;
+  height: 1000px;
   text-align: center;
-  width: 100%;
-  max-width: 1600px;
+  background-image: url("../../../assets/aventura.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
-.container-sobreimagen-inicio {
+@media (max-width: 767px) {
+  .img-container-inicio {
+    width: 600px;
+    height: 300px;
+    max-width: 90%;
+    padding-bottom: 10px;
+  }
+}
+.parrafos-boton-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto-boton-inicio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 .container-texto-fragancias {
@@ -637,6 +646,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
   }
 }
 .container-img-fragancias {
@@ -678,6 +688,11 @@ h1 {
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .img-container-perfumeideal {
+    width: 100%;
+  }
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -696,7 +711,9 @@ h1 {
     gap: 30px;
     margin-left: 10px;
     margin-right: 10px;
-    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
   }
 }
 .container-logos-redes {
@@ -771,6 +788,9 @@ iframe {
 @media (max-width: 767px) {
   .carousel.slide {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 

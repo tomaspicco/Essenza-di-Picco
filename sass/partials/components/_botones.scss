@@ -4,10 +4,6 @@
     @include medidas(150px, 50px);
     font-family: "DM Sans", serif;
     font-size: map-get($font-sizes, s);
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     &:hover{
         background-color:rgb(201, 201, 201);
     }
@@ -16,7 +12,6 @@
     .boton-inicio{
         @include medidas(100px, 40px);
         font-size: map-get($font-sizes, xs);
-        top: 36.5%;
     }
 }
 .btn-propio-inicio {
@@ -42,16 +37,23 @@
     margin: 30px;
     font-family: "DM Sans", serif;
     font-size: map-get($font-sizes, s);
-    width: 25%;
+    width: 100%;
+    max-width: 200px;
     border-radius: 5px;
     cursor: pointer;
     &:hover{
         background-color: map-get($colors , gris);
     }
 }
+@media (max-width: 767px){
+    .boton-perfume-ideal{
+        width: 30%;
+        max-width: 300px;
+    }
+}
 .boton-form-contacto {
     font-family: "DM Sans", serif;
-    font-size: 24px;
+    font-size: map-get($font-sizes, s);
     width: 400px;
     padding: 5px 10px;
     margin-top: 10px;
@@ -68,7 +70,7 @@
 }
 .btn-propio{
     font-family: "Open Sans", serif;
-    font-size: 15px;
+    font-size: map-get($font-sizes, xs);
     font-weight: 400;
     color: map-get($colors , pure-white);
     padding: 7px;
