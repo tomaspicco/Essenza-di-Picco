@@ -6,12 +6,6 @@
     max-width: 1600px;
     text-align: left;
 }
-@media (max-width: 767px){
-    .parrafo-inicio{
-        font-size: map-get($font-sizes , xs);
-        max-width: 90%;
-    }
-}
 .parrafo1-imagen {
     font-family: "DM Sans", serif;
     font-size: 50px;
@@ -19,16 +13,18 @@
     text-align: center;
     width: 100%;
 }
-@media (max-width: 767px){
-    .parrafo1-imagen {
-        font-size: map-get($font-sizes , s);
-    }
-}
 .parrafo2-imagen {
     @extend .parrafo1-imagen; 
     font-size: map-get($font-sizes , l);
 }
 @media (max-width: 767px){
+    .parrafo-inicio{
+        font-size: map-get($font-sizes , xs);
+        max-width: 90%;
+    }
+    .parrafo1-imagen {
+        font-size: map-get($font-sizes , s);
+    }
     .parrafo2-imagen {
         font-size: map-get($font-sizes , xs);
     }

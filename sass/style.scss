@@ -8,24 +8,13 @@
 
 // COMPONENTS
 @import 'partials/components/index';
-@import 'partials/components/fragancias';
-@import 'partials/components/tu-perfume-ideal';
-@import 'partials/components/sobre-nosotros';
+@import 'partials/components/pages';
 @import 'partials/components/images';
 @import 'partials/components/navbar';
 @import 'partials/components/botones';
 @import 'partials/components/cards';
 @import 'partials/components/forms';
-@import 'partials/components/modals';
-@import 'partials/components/body';
-@import 'partials/components/header';
-@import 'partials/components/main';
-@import 'partials/components/footer';
-@import 'partials/components/titulosysubtitulos';
+@import 'partials/components/structure';
+@import 'partials/components/titulos-subtitulos';
 @import 'partials/components/containers';
-@import 'partials/components/accordion';
-@import 'partials/components/iframe';
-@import 'partials/components/carousel';
-// HACER IMPORTS DE ESTILOS PROPIOS DE CADA PÁGINA EN CASO DE QUE EXISTAN //
-
-
+@import 'partials/components/bootstrapAndComponents';

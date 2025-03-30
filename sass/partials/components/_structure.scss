@@ -1,3 +1,17 @@
+html, body {
+    overflow-x: hidden;
+    background-color: map-get($colors , negro);
+}
+main {
+    color: map-get($colors , blanco);
+}
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: map-get($colors , negro-header);
+    color: map-get($colors , blanco);
+}
 footer {
     @include flex(column, center, center);
     text-align: center;

@@ -7,23 +7,11 @@
     width: 100%;
     font-size: map-get($font-sizes , s);
 }
-@media (max-width: 767px){
-    .input-form-perfume-ideal {
-        font-size: map-get($font-sizes , xs);
-    }
-}
 .form-contacto {
     @include flex(column, center, center);
     gap: 15px;
     font-family: "Open Sans", serif;
     font-size: map-get($font-sizes , m);
-}
-@media (max-width: 767px){
-    .form-contacto {
-        font-size: map-get($font-sizes , xs);
-        width: 100%;
-        max-width: 600px;
-    }
 }
 .input-form-contacto {
     display: inline-block;
@@ -32,6 +20,14 @@
     font-size: 20px;
 }
 @media (max-width: 767px){
+    .input-form-perfume-ideal {
+        font-size: map-get($font-sizes , xs);
+    }
+    .form-contacto {
+        font-size: map-get($font-sizes , xs);
+        width: 100%;
+        max-width: 600px;
+    }
     .input-form-contacto {
         font-size: map-get($font-sizes , xs);
         width: 350px;

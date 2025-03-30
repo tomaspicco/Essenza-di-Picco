@@ -1,0 +1,87 @@
+.p-fragancias {
+    font-family: "Montserrat", serif;
+    font-size: map-get($font-sizes , s);
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: left;
+}
+.p-sobre-nosotros {
+    font-family: "Roboto Mono", serif;
+    font-size: map-get($font-sizes , s);
+    padding-left: 7px;
+    max-width: 100%;
+}
+.preguntas {
+    display: flex;
+    flex-direction: column;
+    grid-area: preguntas;
+    font-size: map-get($font-sizes , s);
+    padding-left: 10px;
+    background-color: map-get($colors , negro);
+    color: map-get($colors, blanco);
+}
+.opciones {
+    @include flex(row, left, center);
+    gap: 10px;
+    font-size: map-get($font-sizes , xs);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.mensaje {
+    @include flex(column, center, center);
+    grid-area: mensaje;
+    font-family: "Open Sans", serif;
+    font-size: map-get($font-sizes , s);
+}
+.textarea {
+    @include medidas(100%, 100%);
+    font-size: map-get($font-sizes , s);
+    background-color: map-get($colors , black2);
+    color: map-get($colors , blanco);
+}
+.pregunta-textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;    
+}
+.checkbox{
+    @include medidas(20px, 20px);
+    &:hover{
+        cursor: pointer;
+    }
+}
+@media (max-width: 767px){
+    .p-fragancias{
+        font-size: map-get($font-sizes, xs);
+        max-width: 90%;
+    }
+    .p-sobre-nosotros {
+        font-size: map-get($font-sizes , xs);
+        margin: 0;
+        text-align: center;
+        padding: 5px 2px;
+    }
+    div.animacion{
+        order:2;
+    }
+    .preguntas{
+        width: 100%;
+        max-width: 500px;
+        font-size: map-get($font-sizes , xs);
+        padding-right: 10px;
+    }
+    .mensaje{
+        font-size: map-get($font-sizes , xs);
+        width: 100%;
+        max-width: 500px;
+    }
+    .textarea{
+        font-size: map-get($font-sizes , xs);
+    }
+    .pregunta-textarea{
+        font-size: map-get($font-sizes , xs);
+    }
+}

@@ -1,0 +1,56 @@
+.accordion {
+    max-width: 90%;
+}
+.accordion .accordion-header button {
+    background-color: map-get($colors , black2);
+    color: map-get($colors , pure-white );
+    border: none;
+    &:hover{
+        box-shadow:none;
+    }
+}
+.accordion-item {
+    border: 3px black solid;
+}
+.accordion-body {
+    background-color: map-get($colors , pure-black); 
+    color: map-get($colors , blanco);
+}
+.carousel.slide{
+    display: none;
+}
+.modal-title-propio{
+    font-family: "Open Sans", serif;
+    color: map-get($colors , pure-black);
+}
+.modal-body-propio {
+    font-family: "Open Sans", serif;
+    font-size: map-get($font-sizes , s);
+    font-weight: 100;
+    color: map-get($colors , pure-black);
+    padding-left: 5px;
+}
+iframe {
+    border: none;
+    border-radius: 4px;
+    width:400px;
+    height: 300px;
+}
+@media (max-width: 767px){
+    .accordion {
+        width: 100%; 
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .accordion-item{
+        border: 1px solid black;
+    }
+    .carousel.slide{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .modal-dialog {
+        margin: 1rem;
+    }
+}
