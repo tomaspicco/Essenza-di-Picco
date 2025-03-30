@@ -47,7 +47,8 @@
 }
 @media (max-width: 767px){
     .boton-perfume-ideal{
-        width: 30%;
+        font-size: map-get($font-sizes, xs);
+        @include medidas(30%, 35px);
         max-width: 300px;
     }
 }
@@ -65,7 +66,9 @@
 }
 @media (max-width: 767px){
     .boton-form-contacto {
-        max-width: 100%;
+        font-size: map-get($font-sizes, xs);
+        width: 100%;
+        max-width: 300px;
     }
 }
 .btn-propio{

@@ -1,12 +1,16 @@
 .form-perfume-ideal {
     font-family: "Open Sans", serif;
-    font-size: map-get($font-sizes , s);
 }
 .input-form-perfume-ideal {
     @include flex(column, center, center);
     margin-top: 10px;
     width: 100%;
     font-size: map-get($font-sizes , s);
+}
+@media (max-width: 767px){
+    .input-form-perfume-ideal {
+        font-size: map-get($font-sizes , xs);
+    }
 }
 .form-contacto {
     @include flex(column, center, center);
@@ -16,7 +20,9 @@
 }
 @media (max-width: 767px){
     .form-contacto {
-        padding: 0 20px;
+        font-size: map-get($font-sizes , xs);
+        width: 100%;
+        max-width: 600px;
     }
 }
 .input-form-contacto {
@@ -27,6 +33,8 @@
 }
 @media (max-width: 767px){
     .input-form-contacto {
-        width: 100%;
+        font-size: map-get($font-sizes , xs);
+        width: 350px;
+        max-width: 350px;
     }
 }

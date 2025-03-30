@@ -2,7 +2,7 @@
     @include flex(column, flex-end, center);
     @include medidas(1600px, 1000px);
     text-align: center;
-    background-image: url('../assets/aventura.JPG');
+    background-image: url('../assets/aventura.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,6 +29,11 @@
     flex-direction: column;
     margin-left: 15px;
     width: 100%;
+}
+@media (max-width: 767px){
+    .container-texto-fragancias{
+        margin: 0;
+    }
 }
 .container-fragacias-texto-img{
     @include flex(row, space-around, center);
@@ -106,7 +111,7 @@
         margin-top: 100px;
         @include flex(column, center, center);
         font-family: "Nunito Sans", serif;
-        font-size: map-get($font-sizes , s);
+        font-size: map-get($font-sizes , xs);
         color: map-get($colors , blanco);
         gap: 30px;
         max-width: 100%;

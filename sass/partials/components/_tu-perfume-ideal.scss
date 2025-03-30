@@ -11,12 +11,14 @@
     .preguntas{
         width: 100%;
         max-width: 500px;
+        font-size: map-get($font-sizes , xs);
+        padding-right: 10px;
     }
 }
 .opciones {
     @include flex(row, left, center);
     gap: 10px;
-    font-size: map-get($font-sizes , s);
+    font-size: map-get($font-sizes , xs);
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -28,6 +30,7 @@
 }
 @media (max-width: 767px){
     .mensaje{
+        font-size: map-get($font-sizes , xs);
         width: 100%;
         max-width: 500px;
     }
@@ -38,12 +41,22 @@
     background-color: map-get($colors , black2);
     color: map-get($colors , blanco);
 }
+@media (max-width: 767px){
+    .textarea{
+        font-size: map-get($font-sizes , xs);
+    }
+}
 .pregunta-textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;    
+}
+@media (max-width: 767px){
+    .pregunta-textarea{
+        font-size: map-get($font-sizes , xs);
+    }
 }
 .checkbox{
     @include medidas(20px, 20px);

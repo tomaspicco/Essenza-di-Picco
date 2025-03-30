@@ -27,13 +27,14 @@
             ul {
                 @include flex (column, center, center);
                 padding: 0;
-                gap: 10px;
+                gap: 1px;
                 li {
                     list-style: none;
                     a {
                         width: 100%;
                         text-align: center;
                         margin-top: 25px;
+                        font-size: map-get($font-sizes, xs);
                     }
                 }
             }

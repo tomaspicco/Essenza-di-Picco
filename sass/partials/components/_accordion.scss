@@ -1,5 +1,6 @@
 .accordion {
     max-width: 90%;
+    // margin: auto;
 }
 .accordion .accordion-header button {
     background-color: map-get($colors , black2);
@@ -15,4 +16,14 @@
 .accordion-body {
     background-color: map-get($colors , pure-black); 
     color: map-get($colors , blanco);
+}
+@media (max-width: 767px) {
+    .accordion {
+        width: 100%; 
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .accordion-item{
+        border: 1px solid black;
+    }
 }

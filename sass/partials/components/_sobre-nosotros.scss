@@ -6,8 +6,10 @@
 }
 @media (max-width: 767px){
     .p-sobre-nosotros {
+        font-size: map-get($font-sizes , xs);
         margin: 0;
         text-align: center;
+        padding: 5px 2px;
     }
 }
 @media (max-width: 767px){

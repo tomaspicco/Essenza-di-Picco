@@ -8,6 +8,7 @@
 }
 @media (max-width: 767px){
     .p-fragancias{
+        font-size: map-get($font-sizes, xs);
         max-width: 90%;
     }
 }

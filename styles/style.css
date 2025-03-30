@@ -33,7 +33,7 @@
 
 @media (max-width: 767px) {
   .parrafo-inicio {
-    font-size: 24px;
+    font-size: 16px;
     max-width: 90%;
   }
 }
@@ -56,7 +56,7 @@
 
 @media (max-width: 767px) {
   .parrafo2-imagen {
-    font-size: 24px;
+    font-size: 16px;
   }
 }
 .p-fragancias {
@@ -70,6 +70,7 @@
 
 @media (max-width: 767px) {
   .p-fragancias {
+    font-size: 16px;
     max-width: 90%;
   }
 }
@@ -87,6 +88,8 @@
   .preguntas {
     width: 100%;
     max-width: 500px;
+    font-size: 16px;
+    padding-right: 10px;
   }
 }
 .opciones {
@@ -95,7 +98,7 @@
   justify-content: left;
   align-items: center;
   gap: 10px;
-  font-size: 24px;
+  font-size: 16px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -112,6 +115,7 @@
 
 @media (max-width: 767px) {
   .mensaje {
+    font-size: 16px;
     width: 100%;
     max-width: 500px;
   }
@@ -124,6 +128,11 @@
   color: #dce6ef;
 }
 
+@media (max-width: 767px) {
+  .textarea {
+    font-size: 16px;
+  }
+}
 .pregunta-textarea {
   display: flex;
   flex-direction: column;
@@ -132,6 +141,11 @@
   gap: 10px;
 }
 
+@media (max-width: 767px) {
+  .pregunta-textarea {
+    font-size: 16px;
+  }
+}
 .checkbox {
   width: 20px;
   height: 20px;
@@ -149,8 +163,10 @@
 
 @media (max-width: 767px) {
   .p-sobre-nosotros {
+    font-size: 16px;
     margin: 0;
     text-align: center;
+    padding: 5px 2px;
   }
 }
 @media (max-width: 767px) {
@@ -164,29 +180,49 @@
   margin: 15px 0 10px 25px;
 }
 
+@media (max-width: 767px) {
+  .brand-logo {
+    width: 110px;
+    height: 50px;
+  }
+}
 .hamburguesa-logo {
   width: 60px;
   height: 60px;
 }
 
+@media (max-width: 767px) {
+  .hamburguesa-logo {
+    width: 45px;
+    height: 45px;
+  }
+}
 .img-perfume {
   width: 400px;
   height: 500px;
 }
 
+@media (max-width: 767px) {
+  .img-perfume {
+    width: 300px;
+    height: 400px;
+    width: 100%;
+    max-width: 300px;
+  }
+}
 .img-texto {
   width: 700px;
   height: 700px;
   border-radius: 8px;
-  max-width: 50%;
+  max-width: 90%;
 }
 
 @media (max-width: 767px) {
   .img-texto {
-    width: 550px;
-    height: 600px;
-    max-width: 100%;
-    min-width: 550px;
+    width: 400px;
+    height: 500px;
+    width: 100%;
+    max-width: 400px;
   }
 }
 .img-perfume-ideal {
@@ -211,10 +247,11 @@
 
 @media (max-width: 767px) {
   .img-sobre-nosotros {
+    width: 350px;
+    height: 300px;
     order: 2;
-    max-width: 90%;
-    height: auto;
-    margin: 1rem, auto, 1.5rem, auto;
+    width: 100%;
+    max-width: 350px;
     border-radius: 5px;
   }
 }
@@ -266,7 +303,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    gap: 10px;
+    gap: 1px;
   }
   .navbar ul li {
     list-style: none;
@@ -275,6 +312,7 @@
     width: 100%;
     text-align: center;
     margin-top: 25px;
+    font-size: 16px;
   }
 }
 .boton-inicio {
@@ -346,7 +384,9 @@
 
 @media (max-width: 767px) {
   .boton-perfume-ideal {
+    font-size: 16px;
     width: 30%;
+    height: 35px;
     max-width: 300px;
   }
 }
@@ -365,7 +405,9 @@
 
 @media (max-width: 767px) {
   .boton-form-contacto {
-    max-width: 100%;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
   }
 }
 .btn-propio {
@@ -404,7 +446,6 @@
 
 .form-perfume-ideal {
   font-family: "Open Sans", serif;
-  font-size: 24px;
 }
 
 .input-form-perfume-ideal {
@@ -417,6 +458,11 @@
   font-size: 24px;
 }
 
+@media (max-width: 767px) {
+  .input-form-perfume-ideal {
+    font-size: 16px;
+  }
+}
 .form-contacto {
   display: flex;
   flex-direction: column;
@@ -429,7 +475,9 @@
 
 @media (max-width: 767px) {
   .form-contacto {
-    padding: 0 20px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 600px;
   }
 }
 .input-form-contacto {
@@ -441,7 +489,9 @@
 
 @media (max-width: 767px) {
   .input-form-contacto {
-    width: 100%;
+    font-size: 16px;
+    width: 350px;
+    max-width: 350px;
   }
 }
 .modal-title-propio {
@@ -462,7 +512,7 @@
     margin: 1rem;
   }
 }
-body {
+html, body {
   overflow-x: hidden;
   background-color: #131313;
 }
@@ -501,6 +551,11 @@ footer {
   font-size: 24px;
 }
 
+@media (max-width: 767px) {
+  .parrafo-footer {
+    font-size: 16px;
+  }
+}
 h1 {
   font-family: "Nunito Sans", serif;
   font-size: 48px;
@@ -512,6 +567,11 @@ h1 {
   margin-top: 30px;
 }
 
+@media (max-width: 767px) {
+  .h1-inicio {
+    font-size: 32px;
+  }
+}
 .h1-contacto {
   font-size: 32px;
   font-family: "Open Sans", serif;
@@ -522,6 +582,7 @@ h1 {
 
 @media (max-width: 767px) {
   .h1-contacto {
+    font-size: 24px;
     text-align: center;
   }
 }
@@ -532,7 +593,7 @@ h1 {
 
 @media (max-width: 767px) {
   .h-perfume-ideal {
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
     width: 100%;
     margin: 15px 0;
@@ -547,9 +608,11 @@ h1 {
 
 @media (max-width: 767px) {
   .h-sobre-nosotros {
+    font-size: 40px;
     margin: 0;
     width: 100%;
     text-align: center;
+    padding: 5px;
   }
 }
 .h1-fragancias {
@@ -559,7 +622,7 @@ h1 {
 
 @media (max-width: 767px) {
   .h1-fragancias {
-    font-size: 32px;
+    font-size: 24px;
     max-width: 100%;
   }
 }
@@ -573,7 +636,7 @@ h1 {
 
 @media (max-width: 767px) {
   .h2-fragancias, .h3-fragancias {
-    font-size: 32px;
+    font-size: 24px;
     max-width: 100%;
   }
 }
@@ -584,6 +647,11 @@ h1 {
   margin-top: 15px;
 }
 
+@media (max-width: 767px) {
+  .h3-nombres-perfumes {
+    font-size: 24px;
+  }
+}
 .img-container-inicio {
   display: flex;
   flex-direction: column;
@@ -592,7 +660,7 @@ h1 {
   width: 1600px;
   height: 1000px;
   text-align: center;
-  background-image: url("../assets/aventura.JPG");
+  background-image: url("../assets/aventura.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -631,6 +699,11 @@ h1 {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .container-texto-fragancias {
+    margin: 0;
+  }
+}
 .container-fragacias-texto-img {
   display: flex;
   flex-direction: row;
@@ -736,7 +809,7 @@ h1 {
   justify-content: center;
   align-items: center;
   font-family: "Nunito Sans", serif;
-  font-size: 24px;
+  font-size: 16px;
   color: #dce6ef;
   gap: 30px;
   max-width: 100%;
@@ -774,6 +847,16 @@ h1 {
   color: #dce6ef;
 }
 
+@media (max-width: 767px) {
+  .accordion {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .accordion-item {
+    border: 1px solid black;
+  }
+}
 iframe {
   border: none;
   border-radius: 4px;
@@ -789,7 +872,6 @@ iframe {
   .carousel.slide {
     display: block;
     width: 100%;
-    max-width: 100%;
     margin: 0 auto;
   }
 }

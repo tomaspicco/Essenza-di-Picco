@@ -13,3 +13,8 @@ footer {
     font-family: "DM Sans", serif;
     font-size: map-get($font-sizes , s);
 }
+@media (max-width: 767px){
+    .parrafo-footer{
+        font-size: map-get($font-sizes , xs);
+    }
+}

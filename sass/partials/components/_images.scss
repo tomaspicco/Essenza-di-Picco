@@ -2,22 +2,39 @@
     @include medidas(180px, 75px);
     margin: 15px 0 10px 25px;
 }
+@media (max-width: 767px){
+    .brand-logo{
+    @include medidas(110px, 50px);
+    }
+}
 .hamburguesa-logo {
     @include medidas(60px, 60px);
+}
+@media (max-width: 767px){
+    .hamburguesa-logo{
+    @include medidas(45px, 45px);
+    }
 }
 .img-perfume {
     @include medidas(400px, 500px);
 }
+@media (max-width: 767px){
+    .img-perfume{
+        @include medidas(300px, 400px);
+        width: 100%;
+        max-width: 300px;
+    }
+}
 .img-texto {
     @include medidas(700px, 700px);
     border-radius: 8px;
-    max-width: 50%;  
+    max-width: 90%;  
 }
 @media (max-width: 767px){
     .img-texto{
-        @include medidas(550px, 600px);
-        max-width: 100%;
-        min-width: 550px;
+        @include medidas(400px, 500px);
+        width: 100%;
+        max-width: 400px;
     }
 }
 .img-perfume-ideal {
@@ -37,10 +54,10 @@
 }
 @media (max-width: 767px){
     .img-sobre-nosotros {
+        @include medidas(350px, 300px);
         order: 2;
-        max-width: 90%;
-        height: auto;
-        margin: 1rem, auto, 1.5rem, auto;
+        width: 100%;
+        max-width: 350px;
         border-radius: 5px;
     }
 }

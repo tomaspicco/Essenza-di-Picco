@@ -7,6 +7,11 @@ h1 {
     text-align: center;
     margin-top: 30px;
 }
+@media (max-width: 767px){
+    .h1-inicio {
+        font-size: map-get($font-sizes, m);
+    }
+}
 .h1-contacto {
     font-size: map-get($font-sizes , m);
     font-family: "Open Sans", serif;
@@ -16,6 +21,7 @@ h1 {
 }
 @media (max-width: 767px){
     .h1-contacto {
+        font-size: map-get($font-sizes , s);
         text-align: center;
     }
 }
@@ -25,7 +31,7 @@ h1 {
 }
 @media (max-width: 767px){
     .h-perfume-ideal{
-        font-size: map-get($font-sizes , m);
+        font-size: map-get($font-sizes , s);
         text-align: center;
         width: 100%;
         margin: 15px 0;
@@ -39,9 +45,11 @@ h1 {
 }
 @media (max-width: 767px){
     .h-sobre-nosotros {
+        font-size: map-get($font-sizes , l);
         margin: 0;
         width: 100%;
         text-align: center;
+        padding: 5px;
     }
 }
 .h1-fragancias {
@@ -50,7 +58,7 @@ h1 {
 }
 @media (max-width: 767px){
     .h1-fragancias {
-        font-size: map-get($font-sizes , m);
+        font-size: map-get($font-sizes , s);
         max-width: 100%;
     }
 }
@@ -63,7 +71,7 @@ h1 {
 }
 @media (max-width: 767px){
     .h2-fragancias, .h3-fragancias {
-        font-size: map-get($font-sizes , m);
+        font-size: map-get($font-sizes , s);
         max-width: 100%;
     }
 }
@@ -72,4 +80,9 @@ h1 {
     font-style: italic;
     font-size: map-get($font-sizes , m);
     margin-top: 15px;
+}
+@media (max-width: 767px){
+    .h3-nombres-perfumes {
+        font-size: map-get($font-sizes , s);
+    }
 }
